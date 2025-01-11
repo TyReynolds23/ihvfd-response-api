@@ -32,7 +32,7 @@ let respondingVehicles = {
     },
     'medical': {
         'mainResponse': 'Rescue 51',
-        'secondaey': 'Brush 51/Brush 52',
+        'secondary': 'Brush 51/Brush 52',
         'manpower': 'Engine 50',
         'lastOut': 'Engine 51'
     }
