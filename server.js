@@ -4,6 +4,13 @@ const cors = require('cors')
 const PORT = 8000
 
 app.use(cors());
+app.use('/js', express.static('public/js', {
+    setHeaders: (res, path, stat) => {
+      if (path.endsWith('.js')) {
+        res.set('Content-Type', 'application/javascript');
+      }
+    }
+  }));
 
 let respondingVehicles = {
     'structureFire': {
